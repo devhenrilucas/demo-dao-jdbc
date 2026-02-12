@@ -8,6 +8,12 @@ import model.entities.Seller;
 public class Program2 {
     public static void main(String[] args) {
 
+        DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
+        System.out.println("=== Teste numero 1: Department findById =====");
+        Department department = departmentDao.findById(3);
+        System.out.println(department);
+
+        
     }
 }
